@@ -1,0 +1,5 @@
+Private-Package: rocket.control
+Service-Component: *
+-buildpath: biz.aQute.bnd.annotation,\
+	rocket.control.api;version=latest
+Bundle-Version: 1.0.0
