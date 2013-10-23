@@ -1,3 +1,86 @@
 <?xml version='1.0' encoding='utf-8'?>
-<repository increment='1382446583033' name='Release' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+<repository increment='1382446677967' name='Release' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='rocket.blackbox'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='bf335141d6e1d57bcc218267372ee8b7ef2ee114f87bd91be956e2d015d2beaf'/>
+      <attribute name='url' value='rocket.blackbox/rocket.blackbox-1.0.0.jar'/>
+      <attribute name='size' type='Long' value='2481'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='rocket.blackbox'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='rocket.blackbox'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=rocket.control.api)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='rocket.control'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='3ca0d1226cc4bf8098b81bcedc43da1f552fd8b32a1471b30223a6514328e95f'/>
+      <attribute name='url' value='rocket.control/rocket.control-1.0.0.jar'/>
+      <attribute name='size' type='Long' value='2744'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='rocket.control'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='rocket.control'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=rocket.control.api)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='rocket.control.api'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='8d1f99fae84e7a204e53e2ecb9f4bbf575a10405e0102aa69153ec6763ce1c47'/>
+      <attribute name='url' value='rocket.control.api/rocket.control.api-1.0.0.jar'/>
+      <attribute name='size' type='Long' value='3166'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='rocket.control.api'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='rocket.control.api'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='rocket.control.api'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='rocket.control.api'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+  </resource>
 </repository>
